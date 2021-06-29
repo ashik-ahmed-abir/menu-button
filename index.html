@@ -5,21 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Menu button</title>
 </head>
 <body>
     <section class="navbar">
-        <div class="nav">
-            <a href="#">
-                home
-            </a>
-            <a href="#">
-                home
-            </a>
-            <a href="#">
-                home
-            </a>
-        </div>
+            <div class="left">
+                <a href="#" class="aa">
+                    home
+                </a>
+            </div>
+
+            <div class="right">
+                <a href="#" class="bb hidden md:inline-block">
+                    home
+                </a>
+                <a href="#" id="menu-btn" class="md:hidden">
+                    E
+                </a>
+            </div>
+            <div id="menu" class="opacity-0 pointer-events-none fixed top-0 right-0 bg-white w-full h-screen z-50 flex flex-col justify-center items-center space-y-5 transition-all duration-500">
+                <a href="#" class="" onclick="closeMenu()">
+                    homeeee
+                </a>
+                <a href="#" class="">
+                    home
+                </a>
+
+                <a id="menu-close-btn" class="text-5xl absolute top-4 right-8 leading-4 cursor-pointer ">&times</a>
+            </div>
     </section>
     <section class="home">
         
